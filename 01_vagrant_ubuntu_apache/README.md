@@ -2,6 +2,11 @@
 
 Máquina com Apache instalado e compartilhamento de pastas.
 
+Nesta pasta, com vagrant e virtual box instalados, execute:
+```
+vagrant up
+```
+
 Box do Vagrant: ubuntu/trusty64 (Ubuntu Server 14.04 LTS)
 
 Provisionamento: Apenas Shell (instalação do Apache)
