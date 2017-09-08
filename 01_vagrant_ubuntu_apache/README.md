@@ -7,12 +7,12 @@ Nesta pasta, com vagrant e virtual box instalados, execute:
 vagrant up
 ```
 
-Box do Vagrant: ubuntu/trusty64 (Ubuntu Server 14.04 LTS)
+**Box do Vagrant:** ubuntu/trusty64 (Ubuntu Server 14.04 LTS)
 
-Provisionamento: Apenas Shell (instalação do Apache)
+**Provisionamento:** Apenas Shell (instalação do Apache)
 
-Compartilhamento: Pasta html sicronizada em /var/www/html/hello
+**Compartilhamento:** Pasta html sicronizada em /var/www/html/hello
 
-Portas redirecionadas: Porta 80 do Guest para porta 8080 do Host
+**Portas redirecionadas:** Porta 80 do Guest para porta 8080 do Host
 
-Acesso ao Apache: http://localhost:8080/hello
+**Acesso ao Apache:** http://localhost:8080/hello
