@@ -9,3 +9,5 @@ Provisionamento: Apenas Shell (instalação do Apache)
 Compartilhamento: Pasta html sicronizada em /var/www/html/hello
 
 Portas redirecionadas: Porta 80 do Guest para porta 8080 do Host
+
+Acesso ao Apache: http://localhost:8080/hello
