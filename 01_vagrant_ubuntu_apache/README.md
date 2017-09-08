@@ -2,6 +2,8 @@
 
 Máquina com Apache instalado e compartilhamento de pastas.
 
+Mais instruções na postagem: [Vagrant: Turbine suas VMs e ambientes de desenvolvimento – DevOps Parte 1](http://www.eunati.com.br/2017/08/vagrant-turbine-suas-vms-e-ambientes-de-desenvolvimento-devops-parte-1.html)
+
 Nesta pasta, com vagrant e virtual box instalados, execute:
 ```
 vagrant up
