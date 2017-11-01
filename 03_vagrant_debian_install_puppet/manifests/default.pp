@@ -1,0 +1,3 @@
+package { 'links':
+  ensure => installed
+}

@@ -1,0 +1,37 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  # Utilizando box debian/contrib-jessie64 
+  # Debian 8 com suporte ao vboxfs para correto compartilhamento de pastas com VirtualBox
+  config.vm.box = "debian/contrib-jessie64"
+
+  # Utilizando provisionamento com shell para instalar o Puppet
+  config.vm.provision "shell", inline: <<-SHELL
+	# Habilitando repositorios oficiais do Puppet 5
+	wget https://apt.puppetlabs.com/puppet5-release-jessie.deb
+	sudo dpkg -i puppet5-release-jessie.deb
+
+	# Recuperando lista atualizada de pacotes
+	sudo apt-get update
+	
+	# Instalando o puppet agent (Puppet 5)
+	sudo apt-get install -y puppet-agent
+	
+	# Adicionando um Link simbolico para o puppet ficar no PATH
+	sudo ln -sf /opt/puppetlabs/bin/puppet /usr/bin/puppet
+	
+	# Adicionando modulos para o puppet
+    sudo puppet module install puppetlabs-docker
+    sudo puppet module install puppetlabs-ntp
+    sudo puppet module install puppetlabs-stdlib
+    sudo puppet module install puppetlabs-concat
+    sudo puppet module install puppetlabs-apt
+    sudo puppet module install puppetlabs-vcsrepo
+  SHELL
+  
+  # Provisionando com Puppet (por padrão, puppet buscará pelo 
+  # manifesto default.pp na pasta manifests)
+  config.vm.provision "puppet"
+  
+end

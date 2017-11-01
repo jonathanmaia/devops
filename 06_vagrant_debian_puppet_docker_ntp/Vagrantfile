@@ -1,0 +1,13 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  # Utilizando box eunati/debian-jessie64-puppet5
+  config.vm.box = "eunati/debian-jessie64-puppet5"
+  
+  # Definindo o nome da maquina / dominio
+  config.vm.host_name = "desenvolvimento.eunati"
+
+  # Utilizando provisionamento com puppet para instalar o apache
+  config.vm.provision "puppet"
+end
