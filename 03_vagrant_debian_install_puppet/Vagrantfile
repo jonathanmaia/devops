@@ -22,12 +22,12 @@ Vagrant.configure("2") do |config|
 	sudo ln -sf /opt/puppetlabs/bin/puppet /usr/bin/puppet
 	
 	# Adicionando modulos para o puppet
-    sudo puppet module install puppetlabs-docker
-    sudo puppet module install puppetlabs-ntp
-    sudo puppet module install puppetlabs-stdlib
-    sudo puppet module install puppetlabs-concat
-    sudo puppet module install puppetlabs-apt
-    sudo puppet module install puppetlabs-vcsrepo
+	sudo puppet module install puppetlabs-docker
+	sudo puppet module install puppetlabs-ntp
+	sudo puppet module install puppetlabs-stdlib
+	sudo puppet module install puppetlabs-concat
+	sudo puppet module install puppetlabs-apt
+	sudo puppet module install puppetlabs-vcsrepo
   SHELL
   
   # Provisionando com Puppet (por padrão, puppet buscará pelo 

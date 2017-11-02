@@ -4,7 +4,7 @@ Máquina apenas para demonstrar a instalação e um provisionamento básico com 
 
 Mais instruções nas postagens: 
 
-[Puppet: instalação e primeiros passos - DevOps Parte 4](https://www.eunati.com.br/2017/10/puppet-instalacao-e-primeiros-passos-devops-parte-4.html)
+[Puppet: instalação e fundamentos - DevOps Parte 4](https://www.eunati.com.br/2017/10/puppet-instalacao-e-fundamentos-devops-parte-4.html)
 
 [Gerenciamento de configuração e automação de servidores – DevOps Parte 3](https://www.eunati.com.br/2017/10/gerenciamento-de-configuracao-devops-parte-3.html)
 
