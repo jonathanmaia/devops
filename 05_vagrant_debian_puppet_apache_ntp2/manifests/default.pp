@@ -16,7 +16,7 @@ node 'desenvolvimento.eunati' {
   # Serviço apache2 deve estar rodando
   service { 'apache2':
     ensure  => running,
-	require => Package['apache2']
+    require => Package['apache2']
   }
 
   # Pacote ntp deve estar instalado
@@ -36,7 +36,7 @@ node 'desenvolvimento.eunati' {
   file_line { 'ntp_config_remove_server':
     ensure            => absent,
     path              => $file_ntp_config_file_path,
-	line              => '#server',
+    line              => '#server',
     match             => '^server',
 	match_for_absence => true,
 	multiple          => true,

@@ -5,6 +5,8 @@ Nesta máquina, utilizamos o mínimo possível de módulos do Puppet, demonstran
 
 Mais instruções nas postagens: 
 
+[Puppet: Subindo seus primeiros serviços e o Docker - DevOps Parte 5](https://www.eunati.com.br/2017/11/puppet-subindo-seus-primeiros-servicos-e-o-docker-devops-parte-5.html)
+
 [Puppet: instalação e fundamentos - DevOps Parte 4](https://www.eunati.com.br/2017/10/puppet-instalacao-e-fundamentos-devops-parte-4.html)
 
 [Gerenciamento de configuração e automação de servidores – DevOps Parte 3](https://www.eunati.com.br/2017/10/gerenciamento-de-configuracao-devops-parte-3.html)
