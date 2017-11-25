@@ -7,7 +7,7 @@ node 'desenvolvimento.eunati' {
     command => '/usr/bin/apt-get update'
   }
 
-  # Pacote apache2 deve estar instalado
+  # Pacote apache2 deve estar instalado 
   package { 'apache2':
     ensure  => installed,
     require => Exec['update']

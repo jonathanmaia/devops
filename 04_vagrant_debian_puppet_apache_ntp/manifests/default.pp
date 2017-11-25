@@ -16,7 +16,7 @@ node 'desenvolvimento.eunati' {
   # Serviço apache2 deve estar rodando
   service { 'apache2':
     ensure => running,
-	require => Package['apache2']
+    require => Package['apache2']
   }
 
   # Pacote ntp deve estar instalado
@@ -35,7 +35,7 @@ node 'desenvolvimento.eunati' {
   # Caso não deseje utilizar o file_name, maneira manual para configurar o ntp removendo os servidores antigos e adicionando os novos
   exec { 'ntp_config':
     command => "/bin/sed -i 's,^server,#server,g' $file_ntp_config_file_path ; /bin/echo 'server a.ntp.br\nserver b.ntp.br' >> $file_ntp_config_file_path",
-  	require => File['ntp_config_file'],
+    require => File['ntp_config_file'],
   	unless => "/bin/grep -q 'ntp.br' $file_ntp_config_file_path"
   }
   
